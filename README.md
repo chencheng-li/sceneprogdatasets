@@ -19,6 +19,7 @@ For proper usage, export the respective variables
 ```bash
 export FUTURE_PATH= PATH/TO/3D-FUTURE/DATASET
 export HSSD_PATH= PATH/TO/HSSD/DATASET
+export OBJAVERSE_PATH=PATH/TO/OBJAVERSE/DATASET
 ```
 
 ## **Getting Started**
