@@ -24,7 +24,7 @@ export OBJAVERSE_PATH=<path_to_objaverse_assets>
             raise Exception(msg)
         
             
-        if not os.path.exists(os.path.join(path,'HSSD/assets/model2description.json')) or not os.path.exists(os.path.join(path,'future/assets/model2description.json')):
+        if not os.path.exists(os.path.join(path,'HSSD/assets/model2description.json')) or not os.path.exists(os.path.join(path,'future/assets/model2description.json')) or not os.path.exists(os.path.join(path,'objaverse/assets/compiled.json')):
             msg = f"""
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 You need to download the assets first!
@@ -33,7 +33,7 @@ Run the following commands to download the assets:
 
 aws s3 cp s3://sceneprog-nautilus/sceneprogdatasets/future/ {os.path.join(path,'future/assets')} --recursive
 aws s3 cp s3://sceneprog-nautilus/sceneprogdatasets/hssd/ {os.path.join(path,'HSSD/assets')} --recursive
-
+aws s3 cp s3://sceneprog-nautilus/sceneprogdatasets/objaverse/ {os.path.join(path,'objaverse/assets')} --recursive
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 """
             raise Exception(msg)

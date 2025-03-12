@@ -23,7 +23,7 @@ class AssetRetrieverObjaverse:
         }
         from pathlib import Path
         BASE = str(Path(__file__).parent)
-        self.correction_data  = os.path.join(BASE,'compiled.json')
+        self.correction_data  = os.path.join(BASE, 'assets/compiled.json')
         with open(self.correction_data, 'r') as f:
             self.correction_data = json.load(f)
         
