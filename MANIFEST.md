@@ -1,0 +1,1 @@
+include sceneprogdatasets/objaverse/compiled.json

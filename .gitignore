@@ -1,0 +1,9 @@
+3D-FUTURE-models/
+HSSD-models/
+Objaverse-models/
+.DS_Store
+build/
+dist/
+__pycache__/
+sceneprogdatasets/__pycache__/
+sceneprogdatasets.egg-info/
